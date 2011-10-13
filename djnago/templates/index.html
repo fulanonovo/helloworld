@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>SWQuality</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="/media/css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="/media/css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		<div class="container clearfix">
+			<div id="header">
+			
+				<div class="top">
+					<img src="/media/images/logoSWQ.png" alt="SWQuality" />
+				</div>
+				
+				<div class="slideshow">
+				</div>
+				
+				<div id="nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Quem Somos</a></li>
+						<li><a href="#">Nossos Clientes</a></li>
+						<li><a href="#">Nossa Equipe</a></li>
+						<li><a href="#">Depoimentos</a></li>
+						<li><a href="#">Notícias</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</div>
+				
+			</div> <!-- end header -->
+			
+
+			<div id="maincontent">
+				
+				<div class="categories">
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Lorem Ipsum</a></li>
+						<li><a href="#">Ipsum Dolor</a></li>
+						<li><a href="#">Dolor Sit Amet</a></li>
+						<li><a href="#">Sit Amet Sed Ut</a></li>
+					</ul>
+				</div>
+				
+				{% block corpo %}
+				
+				<div class="featured">
+					<h3>Sed ut perspiciatis</h3>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					</p>
+				</div>
+				
+				<div class="latest-news">
+				
+					<div class="new">
+						<a href="/noticia/{{noticia1.url}}"><h3>{{ noticia1.titulo }}</h3></a>
+						<abbr class="published"> {{ noticia1.publicacao }}</abbr>
+						<p>
+						{{ noticia1.conteudo }}
+						</p>
+
+					</div>
+					
+					<div class="new">
+
+						<h3><a href="/noticia/{{noticia2.url}}">{{ noticia2.titulo }}</a></h3>
+						<abbr class="published"> {{ noticia2.publicacao }}</abbr>
+						<p>
+						{{ noticia2.conteudo }}
+						</p>
+
+					</div>
+					
+					<div class="new">
+
+						<h3><a href="/noticia/{{noticia3.url}}">{{ noticia3.titulo }}</a></h3>
+						<abbr class="published"> {{ noticia3.publicacao }}</abbr>
+						<p>
+						{{ noticia3.conteudo }}
+						</p>
+
+					</div>
+					
+					<div class="new">
+
+						<h3><a href="/noticia/{{noticia4.url}}">{{ noticia4.titulo }}</a></h3>
+						<abbr class="published"> {{ noticia4.publicacao }}</abbr>
+						<p>
+						{{ noticia4.conteudo }}
+						</p>
+
+					</div>
+								
+				</div><!-- end latest-news -->
+				{% endblock %}
+
+			</div><!-- end maincontent -->
+			
+
+			
+		</div> <!-- end container -->
+
+		
+		<div id="footer">
+			<div class="box left">
+				<h2>SW Quality</h2>
+				<p>Av. Barbosa Lima, 149. Sala 106.</p>
+				<p>Edifício Alfredo Fernandes, Recife Antigo</p>
+				<p>Recife, PE - Brasil</p>
+			</div>
+			
+			<div class="box center">
+				<p>Fone/Fax: <span class="tel">+55 (81) 3213-2160</span></p>
+				<p>Email: <a href="" class="email">atendimento@swquality.com.br</a></p>
+			</div>
+			
+			<div class="box right">
+				<p>Copyright © 2011, SW Quality</p>
+			</div>
+		</div><!-- end footer -->
+		
+	</body>
+</html>

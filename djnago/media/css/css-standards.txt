@@ -1,0 +1,10 @@
+/* Normas de Padronização */
+
+.seletor {
+    [fonte e propriedades de texto]
+    [plano de fundo]
+    [tamanho]
+    [bordas]
+    [espaçamentos]
+    [posicionamento]
+}
